@@ -14,7 +14,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
   { name: "Resume", href: "https://drive.google.com/file/d/1D9dJ-M2iadQiGVX9S6SsEwmbIbNMscO9/view?usp=sharing" },
-  { name: "Contact me!", href: "/contactme" },
+  { name: "Contact me!", href: "/contactme" }
 ];
 
 function classNames(...classes) {
@@ -23,7 +23,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="relative bg-gray-800 sticky top-0 z-50 shadow-md">
+    <Disclosure as="nav" className="relative bg-red-800 sticky top-0 z-50 shadow-md">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

@@ -11,6 +11,7 @@ function Hero() {
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-gray-700">
           MERN Developer.
         </h1>
+       
         
         <div className="flex flex-wrap justify-center sm:justify-start gap-2 mb-8">
           <span className="text-red-600 text-xl sm:text-2xl font-medium">Code</span>
@@ -84,6 +85,12 @@ function Hero() {
             </svg>
           </a>
         </div>
+      </div>
+      <div className="px-14 sm:px-26 lg:px-38 my-16 sm:my-24 md:my-12 text-center sm:text-left">
+        <p>Hi, I’m Srujan 👋
+I’m a passionate MERN stack developer who loves building modern and user-friendly web applications. I enjoy working with MongoDB, Express.js, React, and Node.js to create full-stack projects that are fast, responsive, and easy to use.
+
+I like solving problems with clean code, learning new technologies, and improving my skills every day. My goal is to build applications that make life simpler and more enjoyable for people.</p>
       </div>
     </div>
   )
