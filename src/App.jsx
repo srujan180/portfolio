@@ -9,12 +9,14 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
+import { Download } from 'lucide-react';
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
-  { name: "Resume", href: "https://drive.google.com/file/d/1D9dJ-M2iadQiGVX9S6SsEwmbIbNMscO9/view?usp=sharing" },
-  { name: "Contact me!", href: "/contactme" }
+  { name: "Resume",   href: "https://drive.google.com/file/d/1D9dJ-M2iadQiGVX9S6SsEwmbIbNMscO9/view?usp=sharing", icon: Download},
+  { name: "Contact me!", href: "/contactme" },
+  
 ];
 
 function classNames(...classes) {
@@ -26,10 +28,10 @@ export default function Navbar() {
     <Disclosure as="nav" className="relative bg-red-800 sticky top-0 z-50 shadow-md">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+            <div className="relative flex h-16 items-center justify-between ">
               {/* Mobile menu button - only visible on small screens */}
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
                 <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>

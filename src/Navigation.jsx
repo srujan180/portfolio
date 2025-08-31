@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Hero from "./Hero";
 import Resume from "./Resume";
 import Contactme from "./Contactme";
+import Fotter from "./Fotter";
 function Navigation(){
     return(
         <>
@@ -13,7 +14,9 @@ function Navigation(){
             <Route path = "/projects" element = {<Projects />}/>
             <Route path = "/resume" element = {<Resume />}/>
             <Route path = "/contactme" element = {<Contactme />}/>
+            
         </Routes>
+        <Fotter/>
         </>
     )
 }
